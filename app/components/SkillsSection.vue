@@ -108,15 +108,85 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+// 导入必要的 Vue 3 Composition API
+import { computed } from 'vue'
 
-// 使用 i18n 数据
-const languageSkills = computed(() => t('skills.data.languages'))
-const backendSkills = computed(() => t('skills.data.backend'))
-const storageSkills = computed(() => t('skills.data.storage'))
-const devopsSkills = computed(() => t('skills.data.devops'))
-const llmSkills = computed(() => t('skills.data.llm'))
-const architectureSkills = computed(() => t('skills.data.architecture'))
+// 使用 i18n 组合式函数
+const { locale } = useI18n()
+
+// 技能数据
+const skillsData = {
+  zh: {
+    languages: [
+      { name: "Java", level: "expert", label: "精通" },
+      { name: "Go", level: "proficient", label: "熟悉" },
+      { name: "Rust", level: "familiar", label: "了解" },
+      { name: "JavaScript", level: "proficient", label: "熟悉" },
+      { name: "TypeScript", level: "proficient", label: "熟悉" }
+    ],
+    backend: [
+      "Spring", "Spring Cloud", "Spring Boot", "MyBatis",
+      "Netty", "JFinal", "gRPC", "Gin", "Gorm/Xorm"
+    ],
+    storage: [
+      "MySQL", "Redis", "MongoDB", "Elasticsearch",
+      "Apache Pulsar", "Kafka", "RocketMQ", "Flink CDC"
+    ],
+    devops: [
+      "Docker", "Kubernetes", "Linux", "Consul",
+      "Apollo", "Prometheus", "Git", "GitLab CI",
+      "Maven", "Nginx", "Tomcat"
+    ],
+    llm: [
+      "LLaMA Factory", "Hugging Face", "LoRA", "vLLM", "AI Agent"
+    ],
+    architecture: [
+      "微服务架构", "分布式系统设计", "DDD领域驱动", "CQRS",
+      "高并发系统", "高可用架构", "全球化部署", "RESTful API"
+    ]
+  },
+  en: {
+    languages: [
+      { name: "Java", level: "expert", label: "Expert" },
+      { name: "Go", level: "proficient", label: "Proficient" },
+      { name: "Rust", level: "familiar", label: "Familiar" },
+      { name: "JavaScript", level: "proficient", label: "Proficient" },
+      { name: "TypeScript", level: "proficient", label: "Proficient" }
+    ],
+    backend: [
+      "Spring", "Spring Cloud", "Spring Boot", "MyBatis",
+      "Netty", "JFinal", "gRPC", "Gin", "Gorm/Xorm"
+    ],
+    storage: [
+      "MySQL", "Redis", "MongoDB", "Elasticsearch",
+      "Apache Pulsar", "Kafka", "RocketMQ", "Flink CDC"
+    ],
+    devops: [
+      "Docker", "Kubernetes", "Linux", "Consul",
+      "Apollo", "Prometheus", "Git", "GitLab CI",
+      "Maven", "Nginx", "Tomcat"
+    ],
+    llm: [
+      "LLaMA Factory", "Hugging Face", "LoRA", "vLLM", "AI Agent"
+    ],
+    architecture: [
+      "Microservices Architecture", "Distributed System Design", "Domain-Driven Design", "CQRS",
+      "High Concurrency Systems", "High Availability Architecture", "Global Deployment", "RESTful API"
+    ]
+  }
+}
+
+// 计算属性 - 根据当前语言获取技能数据
+const currentSkills = computed(() => {
+  return skillsData[locale.value as 'zh' | 'en'] || skillsData.zh
+})
+
+const languageSkills = computed(() => currentSkills.value.languages)
+const backendSkills = computed(() => currentSkills.value.backend)
+const storageSkills = computed(() => currentSkills.value.storage)
+const devopsSkills = computed(() => currentSkills.value.devops)
+const llmSkills = computed(() => currentSkills.value.llm)
+const architectureSkills = computed(() => currentSkills.value.architecture)
 </script>
 
 <style scoped>

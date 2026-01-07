@@ -82,7 +82,7 @@
             <div class="wechat-modal-content" @click.stop>
               <button class="wechat-close" @click="closeWechatQR">&times;</button>
               <img src="~/assets/wechat-qrcode.png" alt="WeChat QR Code" class="wechat-qrcode" />
-              <p class="wechat-tip">扫一扫上面的二维码，加我为好友</p>
+              <p class="wechat-tip">{{ $t('contact.wechat_tip') }}</p>
             </div>
           </div>
         </div>

@@ -63,10 +63,12 @@
         "Apollo", "Prometheus", "Git", "GitLab CI",
         "Maven", "Nginx", "Tomcat"
       ],
+      "llm": [
+        "LLaMA Factory", "Hugging Face", "LoRA", "vLLM", "AI Agent"
+      ],
       "architecture": [
         "Microservices Architecture", "Distributed System Design", "Domain-Driven Design", "CQRS",
-        "High Concurrency Systems", "High Availability Architecture", "Global Deployment", "RESTful API",
-        "LLaMA Factory", "Hugging Face", "LoRA", "vLLM"
+        "High Concurrency Systems", "High Availability Architecture", "Global Deployment", "RESTful API"
       ]
     }
   },
@@ -204,7 +206,8 @@
       "availability": "Availability",
       "availability_value": "Open to New Opportunities"
     },
-    "social": "Social Media"
+    "social": "Social Media",
+    "wechat_tip": "Scan the QR code above to add me as a friend"
   },
   "footer": {
     "copyright": "© 2024 Avin Zhang. All rights reserved.",

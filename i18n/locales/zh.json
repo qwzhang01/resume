@@ -40,148 +40,17 @@
     "storage": "数据存储 & 消息",
     "devops": "云原生 & 运维",
     "architecture": "架构与设计",
-    "llm": "大语言模型",
-    "ai": "AI相关技术",
-    "data": {
-      "languages": [
-        { "name": "Java", "level": "expert", "label": "精通" },
-        { "name": "Go", "level": "proficient", "label": "熟悉" },
-        { "name": "Rust", "level": "familiar", "label": "了解" },
-        { "name": "JavaScript", "level": "proficient", "label": "熟悉" },
-        { "name": "TypeScript", "level": "proficient", "label": "熟悉" }
-      ],
-      "backend": [
-        "Spring", "Spring Cloud", "Spring Boot", "MyBatis",
-        "Netty", "JFinal", "gRPC", "Gin", "Gorm/Xorm"
-      ],
-      "storage": [
-        "MySQL", "Redis", "MongoDB", "Elasticsearch",
-        "Apache Pulsar", "Kafka", "RocketMQ", "Flink CDC"
-      ],
-      "devops": [
-        "Docker", "Kubernetes", "Linux", "Consul",
-        "Apollo", "Prometheus", "Git", "GitLab CI",
-        "Maven", "Nginx", "Tomcat"
-      ],
-      "llm": [
-        "LLaMA Factory", "Hugging Face", "LoRA", "vLLM", "AI Agent"
-      ],
-      "architecture": [
-        "微服务架构", "分布式系统设计", "DDD领域驱动", "CQRS",
-        "高并发系统", "高可用架构", "全球化部署", "RESTful API"
-      ]
-    }
+    "llm": "大语言模型"
   },
   "experience": {
     "title": "工作经历",
     "subtitle": "职业发展历程",
-    "present": "至今",
-    "education_title": "学历背景",
-    "jobs": [
-      {
-        "title": "应用开发工程师",
-        "company": "深圳市腾佳管理咨询有限公司（腾讯全资子公司）",
-        "period": "2021.07 - 至今",
-        "description": "招聘领域IT解决方案后端开发，支持腾讯生态公司招聘系统与招聘能力中台建设。",
-        "achievements": [
-          "负责招聘流程、待办、消息中心、数据看板等核心模块开发，系统支持高并发访问与复杂业务逻辑",
-          "主导能力中台（背调/笔试考试/心理测评）建设，通过灵活的系统设计提升系统复用性与扩展性",
-          "设计并封装 Spring Pulsar Starter，统一消息中间件使用规范，已在GitHub开源并推送至Maven中央仓库",
-          "抽象数据权限、功能权限与敏感信息加解密脱敏组件，基于策略模式与AOP实现，已开源并组内推广",
-          "实现AI查询脚本生成器，结合大模型将自然语言查询转换为SQL，获组内创新奖",
-          "设计可扩展的第三方招聘网站对接模块，通过设计模式解耦不同平台接口差异，支持失败重试与统一接入"
-        ]
-      },
-      {
-        "title": "后台总监",
-        "company": "立富科技（深圳）有限公司",
-        "period": "2020.02 - 2021.06",
-        "description": "金融量化交易系统研发，负责C端系统与数据中心技术架构与团队管理。",
-        "achievements": [
-          "主导金融数据平台建设，对接多家数据供应商（恒生期指、沪港通、深股通、比特币等）",
-          "实现高吞吐、低延迟的数据采集、清洗、存储与分发系统",
-          "设计基于 Netty + Kafka + Disruptor 的高性能数据管道，支持实时数据流处理与多策略订阅",
-          "推动系统架构向响应式（WebFlux）与事件驱动演进，提升系统并发能力与资源利用率"
-        ]
-      },
-      {
-        "title": "创始人 & CEO",
-        "company": "深圳市薇抖软件有限公司",
-        "period": "2018.04 - 2020.02",
-        "description": "IT外包创业，负责技术架构、产品设计与团队管理，技术团队最多时12人。",
-        "achievements": [
-          "从0到1打造多条业务线产品，包括本地生活、电商、SaaS（物业、教育、党建等）",
-          "覆盖前端、后端与移动端全栈技术开发",
-          "设计轻量级快速开发框架（JFinal + Flutter + Vue）与微服务架构方案（Spring Cloud）",
-          "建立产品研发管理体系，推动敏捷流程与工程规范在团队落地"
-        ]
-      },
-      {
-        "title": "早期经历",
-        "company": "残友软件 / 今朝科技",
-        "period": "2014.02 - 2018.03",
-        "description": "Java工程师 → 全栈工程师，负责企业ERP、O2O平台、政务系统等后端开发。",
-        "achievements": [
-          "残友软件：开发干细胞存储O2O平台、音乐播放器APP、政府OA系统、核电厂火灾评定系统",
-          "今朝科技：开发家政服务呼叫中心系统、本地信息分类网站及多个CMS系统",
-          "技术栈涵盖 Spring Boot、MyBatis、Shiro、Elasticsearch、SSH等"
-        ]
-      }
-    ],
-    "education": [
-      { "school": "山西医科大学", "major": "应用心理学", "degree": "硕士", "period": "2011.09 - 2014.07" },
-      { "school": "长治医学院", "major": "应用心理学", "degree": "学士", "period": "2007.09 - 2011.07" }
-    ]
+    "education_title": "学历背景"
   },
   "projects": {
     "title": "开源项目",
     "subtitle": "GitHub 精选作品",
-    "view_project": "查看项目",
-    "view_code": "查看代码",
-    "data": [
-      {
-        "name": "seven-spring-mq-pulsar-starter",
-        "description": "功能丰富、易于使用的 Spring Boot Pulsar Starter，提供完整的 Pulsar 集成解决方案。",
-        "tech": ["Spring Boot", "Apache Pulsar", "Maven", "Java"],
-        "github": "https://github.com/qwzhang01/seven-spring-mq-pulsar-starter"
-      },
-      {
-        "name": "seven-data-security",
-        "description": "基于 MyBatis 的综合性 Spring Boot 数据安全库，提供透明的数据加密、脱敏和细粒度数据权限控制。",
-        "tech": ["Spring Boot", "MyBatis", "AOP", "加密算法"],
-        "github": "https://github.com/qwzhang01/seven-data-security"
-      },
-      {
-        "name": "seven-shield",
-        "description": "强大的基于注解的数据脱敏库，为 Spring Boot 应用提供 API 响应中敏感数据的自动灵活脱敏，支持多种数据类型。",
-        "tech": ["Spring Boot", "AOP", "注解处理"],
-        "github": "https://github.com/qwzhang01/seven-shield"
-      },
-      {
-        "name": "seven-operating-record",
-        "description": "基于 AOP 的操作记录库，为 Spring Boot 应用提供可自定义的记录策略。",
-        "tech": ["Spring Boot", "AOP", "日志记录"],
-        "github": "https://github.com/qwzhang01/seven-operating-record"
-      },
-      {
-        "name": "seven-spring-web-tool",
-        "description": "基于 Spring 的 Web 工具集，主要引入加密、数据权限、脱敏、操作记录等库。",
-        "tech": ["Spring Boot", "Web工具", "安全"],
-        "github": "https://github.com/qwzhang01/seven-spring-web-tool"
-      },
-      {
-        "name": "seven-sql-parser",
-        "description": "纯 Java SQL 解析工具，支持 SQL 与对象之间的双向转换，全面支持 MySQL 语法，无需外部依赖。",
-        "tech": ["Java", "SQL解析", "MySQL"],
-        "github": "https://github.com/qwzhang01/seven-sql-parser"
-      },
-      {
-        "name": "seven_reflection",
-        "description": "Java 反射工具，纯大模型生成，未改一行代码。",
-        "tech": ["Java", "反射", "AI生成"],
-        "github": "https://github.com/qwzhang01/seven_reflection"
-      }
-    ]
+    "view_code": "查看代码"
   },
   "contact": {
     "title": "联系我",
@@ -193,14 +62,10 @@
       "subject": "主题",
       "message": "消息内容",
       "send": "发送消息",
-      "sending": "发送中...",
-      "success": "消息已发送！",
-      "error": "发送失败，请重试"
+      "sending": "发送中..."
     },
     "info": {
       "email": "邮箱",
-      "phone": "电话",
-      "phone_value": "18165748705",
       "location": "位置",
       "location_value": "中国 · 深圳",
       "availability": "工作状态",

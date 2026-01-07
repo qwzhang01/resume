@@ -40,148 +40,17 @@
     "storage": "Data Storage & Messaging",
     "devops": "Cloud Native & DevOps",
     "architecture": "Architecture & Design",
-    "llm": "Large Language Models",
-    "ai": "AI Technologies",
-    "data": {
-      "languages": [
-        { "name": "Java", "level": "expert", "label": "Expert" },
-        { "name": "Go", "level": "proficient", "label": "Proficient" },
-        { "name": "Rust", "level": "familiar", "label": "Familiar" },
-        { "name": "JavaScript", "level": "proficient", "label": "Proficient" },
-        { "name": "TypeScript", "level": "proficient", "label": "Proficient" }
-      ],
-      "backend": [
-        "Spring", "Spring Cloud", "Spring Boot", "MyBatis",
-        "Netty", "JFinal", "gRPC", "Gin", "Gorm/Xorm"
-      ],
-      "storage": [
-        "MySQL", "Redis", "MongoDB", "Elasticsearch",
-        "Apache Pulsar", "Kafka", "RocketMQ", "Flink CDC"
-      ],
-      "devops": [
-        "Docker", "Kubernetes", "Linux", "Consul",
-        "Apollo", "Prometheus", "Git", "GitLab CI",
-        "Maven", "Nginx", "Tomcat"
-      ],
-      "llm": [
-        "LLaMA Factory", "Hugging Face", "LoRA", "vLLM", "AI Agent"
-      ],
-      "architecture": [
-        "Microservices Architecture", "Distributed System Design", "Domain-Driven Design", "CQRS",
-        "High Concurrency Systems", "High Availability Architecture", "Global Deployment", "RESTful API"
-      ]
-    }
+    "llm": "Large Language Models"
   },
   "experience": {
     "title": "Work Experience",
     "subtitle": "Career Journey",
-    "present": "Present",
-    "education_title": "Education",
-    "jobs": [
-      {
-        "title": "Application Developer",
-        "company": "Shenzhen Tengjia Management Consulting (Tencent Subsidiary)",
-        "period": "Jul 2021 - Present",
-        "description": "Backend development for recruitment IT solutions, supporting Tencent ecosystem recruitment system and capability platform.",
-        "achievements": [
-          "Responsible for core module development including recruitment workflow, todo, message center, and data dashboard, supporting high-concurrency access and complex business logic",
-          "Led capability platform construction (background check/examination/psychological assessment) with flexible system design to improve reusability and scalability",
-          "Designed and encapsulated Spring Pulsar Starter, standardizing message middleware usage, open-sourced on GitHub and published to Maven Central Repository",
-          "Abstracted data permission, functional permission, and sensitive information encryption/decryption/masking components based on Strategy Pattern and AOP, open-sourced and promoted within the team",
-          "Implemented AI query script generator combining large language models to convert natural language queries to SQL, won team innovation award",
-          "Designed extensible third-party recruitment website integration module, decoupling different platform interface differences through design patterns, supporting failure retry and unified access"
-        ]
-      },
-      {
-        "title": "Backend Director",
-        "company": "Lifu Technology (Shenzhen) Co., Ltd.",
-        "period": "Feb 2020 - Jun 2021",
-        "description": "Financial quantitative trading system R&D, responsible for C-end system and data center architecture.",
-        "achievements": [
-          "Led financial data platform construction, integrating multiple data suppliers (HSI futures, Shanghai-Hong Kong Stock Connect, Shenzhen-Hong Kong Stock Connect, Bitcoin, etc.)",
-          "Implemented high-throughput, low-latency data collection, cleaning, storage and distribution system",
-          "Designed high-performance data pipeline based on Netty + Kafka + Disruptor supporting real-time data streaming and multi-strategy subscription",
-          "Promoted system architecture evolution towards reactive (WebFlux) and event-driven patterns, improving system concurrency and resource utilization"
-        ]
-      },
-      {
-        "title": "Founder & CEO",
-        "company": "Shenzhen Weidou Software Co., Ltd.",
-        "period": "Apr 2018 - Feb 2020",
-        "description": "IT outsourcing startup, responsible for technical architecture, product design and team management, with technical team reaching up to 12 people at peak.",
-        "achievements": [
-          "Built multiple product lines from 0 to 1, including local services, e-commerce, SaaS (property management, education, party building, etc.)",
-          "Covered full-stack technology development including frontend, backend and mobile",
-          "Designed lightweight rapid development framework (JFinal + Flutter + Vue) and microservices architecture solution (Spring Cloud)",
-          "Established product R&D management system, promoting agile processes and engineering standards implementation within the team"
-        ]
-      },
-      {
-        "title": "Early Career",
-        "company": "Canyou Software / Jinzhao Technology",
-        "period": "Feb 2014 - Mar 2018",
-        "description": "Java Engineer → Full Stack Engineer, responsible for enterprise ERP, O2O platform, government systems.",
-        "achievements": [
-          "Canyou Software: Developed stem cell storage O2O platform, music player APP, government OA system, nuclear power plant fire assessment system",
-          "Jinzhao Technology: Developed housekeeping service call center system, local classified information website and multiple CMS systems",
-          "Tech stack covered Spring Boot, MyBatis, Shiro, Elasticsearch, SSH, etc."
-        ]
-      }
-    ],
-    "education": [
-      { "school": "Shanxi Medical University", "major": "Applied Psychology", "degree": "Master's", "period": "Sep 2011 - Jul 2014" },
-      { "school": "Changzhi Medical College", "major": "Applied Psychology", "degree": "Bachelor's", "period": "Sep 2007 - Jul 2011" }
-    ]
+    "education_title": "Education"
   },
   "projects": {
     "title": "Open Source Projects",
     "subtitle": "GitHub Featured Work",
-    "view_project": "View Project",
-    "view_code": "View Code",
-    "data": [
-      {
-        "name": "seven-spring-mq-pulsar-starter",
-        "description": "A feature-rich, easy-to-use Spring Boot Pulsar Starter that provides a complete Pulsar integration solution.",
-        "tech": ["Spring Boot", "Apache Pulsar", "Maven", "Java"],
-        "github": "https://github.com/qwzhang01/seven-spring-mq-pulsar-starter"
-      },
-      {
-        "name": "seven-data-security",
-        "description": "A comprehensive MyBatis-based Spring Boot data security library providing transparent data encryption, masking and fine-grained data permission control.",
-        "tech": ["Spring Boot", "MyBatis", "AOP", "Encryption Algorithms"],
-        "github": "https://github.com/qwzhang01/seven-data-security"
-      },
-      {
-        "name": "seven-shield",
-        "description": "A powerful, annotation-based data masking library for Spring Boot applications with automatic and flexible masking of sensitive data in API responses.",
-        "tech": ["Spring Boot", "AOP", "Annotation Processing"],
-        "github": "https://github.com/qwzhang01/seven-shield"
-      },
-      {
-        "name": "seven-operating-record",
-        "description": "An AOP-based operation recording library for Spring Boot applications with customizable recording strategies.",
-        "tech": ["Spring Boot", "AOP", "Log Recording"],
-        "github": "https://github.com/qwzhang01/seven-operating-record"
-      },
-      {
-        "name": "seven-spring-web-tool",
-        "description": "Spring-based web toolkit that primarily integrates encryption, data permissions, masking, operation recording and other libraries.",
-        "tech": ["Spring Boot", "Web Tools", "Security"],
-        "github": "https://github.com/qwzhang01/seven-spring-web-tool"
-      },
-      {
-        "name": "seven-sql-parser",
-        "description": "Pure Java SQL parsing tool supporting bidirectional conversion between SQL and objects, with comprehensive MySQL syntax support and no external dependencies.",
-        "tech": ["Java", "SQL Parsing", "MySQL"],
-        "github": "https://github.com/qwzhang01/seven-sql-parser"
-      },
-      {
-        "name": "seven_reflection",
-        "description": "Java reflection utility, purely generated by large language model without modifying a single line of code.",
-        "tech": ["Java", "Reflection", "AI Generated"],
-        "github": "https://github.com/qwzhang01/seven_reflection"
-      }
-    ]
+    "view_code": "View Code"
   },
   "contact": {
     "title": "Contact Me",
@@ -193,14 +62,10 @@
       "subject": "Subject",
       "message": "Message",
       "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent!",
-      "error": "Failed to send, please try again"
+      "sending": "Sending..."
     },
     "info": {
       "email": "Email",
-      "phone": "Phone",
-      "phone_value": "18165748705",
       "location": "Location",
       "location_value": "China · Shenzhen",
       "availability": "Availability",

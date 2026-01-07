@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   
   // GitHub Pages 配置
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/resume-site/' : '/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/resume/' : '/',
   },
   
   modules: ['@nuxtjs/i18n'],

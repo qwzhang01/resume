@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-🌐 [查看在线简历](https://yourusername.github.io/resume-site/)
+🌐 [查看在线简历](https://qwzhang01.github.io/resume/)
 
 ## 功能特性
 
@@ -68,13 +68,13 @@ git push origin main
 - 构建静态网站
 - 部署到 GitHub Pages
 
-部署完成后，你的网站将在 `https://yourusername.github.io/resume-site/` 可访问。
+部署完成后，你的网站将在 `https://qwzhang01.github.io/resume/` 可访问。
 
 ## 自定义配置
 
 ### 修改仓库名称
 
-如果你的仓库名称不是 `resume-site`，需要修改 `nuxt.config.ts` 中的 `baseURL`：
+如果你的仓库名称不是 `resume`，需要修改 `nuxt.config.ts` 中的 `baseURL`：
 
 ```typescript
 app: {
@@ -93,7 +93,7 @@ echo "your-domain.com" > public/CNAME
 ## 项目结构
 
 ```
-resume-site/
+resume/
 ├── app/                 # 应用页面和组件
 ├── i18n/               # 国际化文件
 ├── public/             # 静态资源
